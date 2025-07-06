@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ristorante - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="icon" href="Da_Roberto.png" type="image/png">
+</head>
+<body>
+<div class="wrapper">
+
+    <!-- Navbar -->
+    <header id="navbar" class="navbar">
+        <div class="container">
+            <img src="Da_Roberto.png" alt="Logo" class="logo" />
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <nav id="nav-links" class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menù</a>
+                <a href="galleria.html">Galleria</a>
+                <a href="contatti.html">Contatti</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carosello -->
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="slide active">
+                <img src="https://media.istockphoto.com/id/1446478805/it/foto/uno-chef-sta-finendo-la-preparazione-del-piatto.jpg?s=612x612&w=0&k=20&c=1meHKoHzTvs9L811IyUNMkjfoPUFZCw2YFjpiUJCEHU=" alt="Pasta italiana">
+            </div>
+            <div class="slide">
+                <img src="https://media.istockphoto.com/id/1081422898/it/foto/anatra-fritta-in-padella.jpg?s=612x612&w=0&k=20&c=ZUg7TEg5vFi_KMNxoPoGHwcVfzyRbX-k6Km143NwYn0=" alt="Anatra fritta">
+            </div>
+            <div class="slide">
+                <img src="https://media.istockphoto.com/id/500466008/it/foto/bistecca-di-manzo.jpg?s=612x612&w=0&k=20&c=5G7RzzfUMuK4ge5pnZ0B8N9qdNP_oTpVR7m7gxlHduQ=" alt="Bistecca di manzo">
+            </div>
+        </div>
+        <div class="carousel-overlay-text">Ristorante Da Roberto</div>
+    </section>
+
+    <!-- Descrizione -->
+    <main>
+        <section class="descrizione">
+            <div class="riga">
+                <div class="testo">
+                    <h2>Benvenuti al Ristorante Da Roberto</h2>
+                    <p>Nel cuore della tradizione gastronomica italiana, il Ristorante Da Roberto offre un’esperienza unica fatta di sapori autentici, ingredienti freschi e passione per la cucina. Ogni piatto racconta una storia, ogni ingrediente è scelto con cura.</p>
+                </div>
+            </div>
+            <div class="riga inversa">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Sala ristorante elegante">
+                <div class="testo">
+                    <h2>Eleganza e Accoglienza</h2>
+                    <p>Un ambiente raffinato ma familiare, perfetto per cene romantiche, eventi o semplici serate in compagnia. Il nostro staff ti accoglierà con professionalità e un sorriso, per farti sentire sempre a casa.</p>
+                </div>
+            </div>
+            <div class="riga">
+                <img src="https://media.istockphoto.com/id/1446478827/it/foto/uno-chef-sta-cucinando-nella-cucina-del-suo-ristorante.jpg?s=612x612&w=0&k=20&c=2TZGrqU7TAPMOtEVU-lRGRRlA-V663jHgobpI2H4FOI=" alt="Chef al lavoro">
+                <div class="testo">
+                    <h2>La nostra cucina</h2>
+                    <p>Dalla pasta fresca fatta a mano ai dolci della casa, ogni piatto è preparato al momento, con prodotti stagionali e locali. Offriamo anche un’ampia carta dei vini per accompagnare al meglio ogni portata.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Mappa -->
+    <section class="mappa">
+        <h2>Ci trovi qui 📍</h2>
+        <div id="map"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Ristorante Da Roberto - Tutti i diritti riservati - Realizzato da Fabio Merello</p>
+    </footer>
+
+</div>
+</body>
+</html>

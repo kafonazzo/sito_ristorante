@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Galleria - Ristorante Da Roberto</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="icon" href="Da_Roberto.png" type="image/png">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 <div class="wrapper">
-    <!-- Navbar (uguale) -->
+
+    <!-- Navbar -->
     <header id="navbar" class="navbar">
         <div class="container">
             <img src="Da_Roberto.png" alt="Logo" class="logo" />
@@ -24,24 +26,28 @@
         </div>
     </header>
 
-    <!-- Sezione Galleria -->
-    <main class="galleria">
-        <h1>La nostra galleria</h1>
-        <div class="grid-galleria">
-            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2" alt="Antipasto">
-            <img src="https://images.unsplash.com/photo-1589308078056-f3b7b0f6a0ae" alt="Piatto gourmet">
-            <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f" alt="Dolci della casa">
-            <img src="https://images.unsplash.com/photo-1543352634-05fa3f6f9cde" alt="Tavoli apparecchiati">
-            <img src="https://images.unsplash.com/photo-1598511723831-11d8d3f7b88a" alt="Sala del ristorante">
-            <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="Pasta artigianale">
+    <!-- Hero -->
+    <section class="hero-gallery">
+        <div class="hero-gallery-content">
+            <h1 class="hero-title">La Nostra Galleria</h1>
+            <p class="hero-subtitle">Un viaggio visivo tra profumi, sapori e atmosfera</p>
         </div>
-    </main>
+    </section>
 
-    <!-- Footer (uguale) -->
+    <!-- Galleria Immagini -->
+    <section class="gallery-grid">
+        <img src="https://media.istockphoto.com/id/1165399909/it/foto/pasto-delizioso-su-un-piatto-nero-vista-dallalto-spazio-di-copia.jpg?s=612x612&w=0&k=20&c=RFuHH78N0ncDdn7zx1JTisaXL6wjMNw5PcQcp0LxoX4=" alt="Piatto gourmet 1">
+        <img src="https://media.istockphoto.com/id/488960908/it/foto/pasta-fatta-in-casa.jpg?s=612x612&w=0&k=20&c=umM_8bhtwyb9tkmgjFP1ho-YrEV8z8ghV_cxVdVWwfI=" alt="Piatto gourmet 2">
+        <img src="https://media.istockphoto.com/id/1176929739/it/foto/piatto-ristorante-di-filetto-di-manzo-angus-nero-con-patate-calde-in-salsa-di-formaggio-e.jpg?s=612x612&w=0&k=20&c=Q15a61ikR5BG8ZK2wivnOoh9kDiYalxl3vtju67VYOA=" alt="Sala del ristorante">
+        <img src="https://media.istockphoto.com/id/1467334743/it/video/tartine-festiva-con-foie-gras.jpg?s=640x640&k=20&c=s2H0ZE65iLDNBKgU-OZWb_tfP6Ct_E-nv1a5_V3BAXA=" alt="Dettaglio mise en place">
+        <img src="https://media.istockphoto.com/id/137737392/it/foto/chef-prepara-piatti-in-cucina.jpg?s=612x612&w=0&k=20&c=FAv1lDwHdLxrhsuXQgdrhiD0D6k3Gouz5I30Tz5ErCs=" alt="Chef al lavoro">
+        <img src="https://media.istockphoto.com/id/1333387337/it/foto/vino-bianco-e-baccal%C3%A0-al-ristorante.jpg?s=612x612&w=0&k=20&c=RYOui6OxI58OzDzm5wB030-8lNUt-WH1QF4xlpaRhKE=" alt="Selezione vini pregiati">
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Ristorante Da Roberto - Tutti i diritti riservati - Realizzato da Fabio Merello</p>
     </footer>
 </div>
-<script src="script.js"></script>
 </body>
 </html>

@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contatti - Ristorante Da Roberto</title>
+    <link rel="icon" href="Da_Roberto.png" type="image/png">
+    <!-- CSS personalizzato -->
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Script personalizzato -->
+    <script defer src="script.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -33,21 +37,17 @@
         <p>Per prenotazioni, eventi o qualsiasi informazione.</p>
     </section>
 
-    <!-- Info contatto -->
-    <section class="contact-info">
-        <div class="info-box">
+    <!-- Info contatto migliorata -->
+    <section class="contact-info enhanced-contact">
+        <div class="info-box wide">
             <h2>Dove siamo</h2>
-            <p><strong>📍 Indirizzo:</strong> Via dei Sapori 12, 16100 Genova</p>
-            <p><strong>📞 Telefono:</strong> <a href="tel:+39010222222">+39 010 222 2222</a></p>
-            <p><strong>📧 Email:</strong> <a href="mailto:prenotazioni@daroberto.it">prenotazioni@daroberto.it</a></p>
+            <p><strong>📍 Indirizzo:</strong><br> Via dei Sapori 12, 16100 Genova</p>
+            <p><strong>📞 Telefono:</strong><br> <a href="tel:+39010222222">+39 010 222 2222</a></p>
+            <p><strong>📧 Email:</strong><br> <a href="mailto:prenotazioni@daroberto.it">prenotazioni@daroberto.it</a></p>
             <p><strong>🕒 Orari:</strong><br>
                 Lun-Sab: 12:00 - 15:00 / 19:00 - 23:00<br>
                 Domenica: Chiuso
             </p>
-        </div>
-
-        <div class="map-box">
-            <div id="map"></div>
         </div>
     </section>
 
@@ -73,16 +73,5 @@
     </footer>
 
 </div>
-
-<!-- Mappa -->
-<script>
-    const map = L.map('map').setView([44.42850, 8.74959], 18);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
-    L.marker([44.42850, 8.74959]).addTo(map)
-        .bindPopup('Ristorante Da Roberto<br>Via dei Sapori 12, Genova')
-        .openPopup();
-</script>
 </body>
 </html>

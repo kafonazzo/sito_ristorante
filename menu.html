@@ -1,10 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menù - Ristorante Da Roberto</title>
+    <link rel="icon" href="Da_Roberto.png" type="image/png">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+<div class="wrapper">
 
+    <!-- Navbar -->
+    <header id="navbar" class="navbar">
+        <div class="container">
+            <img src="Da_Roberto.png" alt="Logo" class="logo" />
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <nav id="nav-links" class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html" class="active">Menù</a>
+                <a href="galleria.html">Galleria</a>
+                <a href="contatti.html">Contatti</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Menu -->
+    <section class="hero-menu">
+        <h1>Il Nostro Menù</h1>
+        <p>Un viaggio nei sapori della tradizione ligure con un tocco gourmet.</p>
+    </section>
+
+    <!-- Menù Section -->
+    <section class="menu-section">
+        <div class="menu-category">
+            <h2>Antipasti</h2>
+            <ul>
+                <li><strong>Focaccia di Recco</strong> – con stracchino cremoso</li>
+                <li><strong>Caponata ligure</strong> – con olive taggiasche</li>
+                <li><strong>Acciughe al verde</strong> – servite con crostini caldi</li>
+            </ul>
+            <img src="https://media.istockphoto.com/id/1192827985/it/foto/gambero-re-scottato.jpg?s=612x612&w=0&k=20&c=--ct2Wp6JJFzfuxHKI-1mR2K8yfMJAnSK4m9CHnM_tc=" alt="Antipasti" class="menu-image">
+        </div>
+
+        <div class="menu-category">
+            <h2>Primi Piatti</h2>
+            <ul>
+                <li><strong>Trofie al pesto</strong> – con basilico DOP di Prà</li>
+                <li><strong>Ravioli di borragine</strong> – con burro e salvia</li>
+                <li><strong>Risotto ai frutti di mare</strong> – mantecato al vino bianco</li>
+            </ul>
+            <img src="https://media.istockphoto.com/id/925256408/it/foto/spaghetti-al-sugo-di-pomodoro-fresco-mozzarella-e-basilico.jpg?s=612x612&w=0&k=20&c=MmeiihsZLM1lofyJiA9E8cLWJNCz4zkBot5-Rg0s_sU=" alt="Primi Piatti" class="menu-image">
+        </div>
+
+        <div class="menu-category">
+            <h2>Secondi Piatti</h2>
+            <ul>
+                <li><strong>Branzino al forno</strong> – con patate e olive nere</li>
+                <li><strong>Coniglio alla ligure</strong> – con pinoli e vino Pigato</li>
+                <li><strong>Tagliata di manzo</strong> – con rucola e scaglie di parmigiano</li>
+            </ul>
+            <img src="https://media.istockphoto.com/id/1150368715/it/foto/confit-gamba-danatra.jpg?s=612x612&w=0&k=20&c=W003hQrLN9Q_UF8QfmK6wKx1FAbQRx3us_y2DicM4ZA=" alt="Secondi Piatti" class="menu-image">
+        </div>
+
+        <div class="menu-category">
+            <h2>Dolci</h2>
+            <ul>
+                <li><strong>Panna cotta</strong> – con coulis di frutti rossi</li>
+                <li><strong>Torta caprese</strong> – con mandorle e cioccolato</li>
+                <li><strong>Tiramisù della casa</strong> – classico e cremoso</li>
+            </ul>
+            <img src="https://media.istockphoto.com/id/865586350/it/foto/cheesecake-al-cioccolato-sopra-la-vista-sul-legno-rustico.jpg?s=612x612&w=0&k=20&c=ofnbDcn8wBrUBqxAVydhC5_5rvqwn_R_d8JKcjAVGrA=" alt="Dolci" class="menu-image">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Ristorante Da Roberto - Tutti i diritti riservati - Realizzato da Fabio Merello</p>
+    </footer>
+
+</div>
 </body>
 </html>

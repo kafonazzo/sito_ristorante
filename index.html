@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ristorante - Home</title>
+    <title>Caffetteria Roma - Home</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <link rel="icon" href="Da_Roberto.png" type="image/png">
+    <script defer src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="icon" href="caffe_roma.png" type="image/png">
+
+    <style>
+        /* Stile base per la mappa */
+        #map {
+            height: 400px;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .mappa h2 {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 <body>
 <div class="wrapper">
@@ -17,12 +34,11 @@
     <!-- Navbar -->
     <header id="navbar" class="navbar">
         <div class="container">
-            <img src="Da_Roberto.png" alt="Logo" class="logo" />
+            <img src="caffe_roma.png" alt="Logo" class="logo" />
             <div class="menu-toggle" id="menu-toggle">&#9776;</div>
             <nav id="nav-links" class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="menu.html">Menù</a>
-                <a href="galleria.html">Galleria</a>
                 <a href="contatti.html">Contatti</a>
             </nav>
         </div>
@@ -32,16 +48,16 @@
     <section class="carousel">
         <div class="carousel-container">
             <div class="slide active">
-                <img src="https://media.istockphoto.com/id/1446478805/it/foto/uno-chef-sta-finendo-la-preparazione-del-piatto.jpg?s=612x612&w=0&k=20&c=1meHKoHzTvs9L811IyUNMkjfoPUFZCw2YFjpiUJCEHU=" alt="Pasta italiana">
+                <img src="https://media.istockphoto.com/id/1307999346/it/foto/bicchiere-di-gelido-cocktail-spritz-aperol-servito-in-un-bicchiere-da-vino-decorato-con-fette.jpg?s=612x612&w=0&k=20&c=7Ir-iMU1Z2aVN3BvQNv1M_ZFkcDRpH5zzzByy2mk3Pw=" alt="Pasta italiana">
             </div>
             <div class="slide">
-                <img src="https://media.istockphoto.com/id/1081422898/it/foto/anatra-fritta-in-padella.jpg?s=612x612&w=0&k=20&c=ZUg7TEg5vFi_KMNxoPoGHwcVfzyRbX-k6Km143NwYn0=" alt="Anatra fritta">
+                <img src="https://media.istockphoto.com/id/2166206316/it/foto/persone-felici-che-brindano-ai-bicchieri-da-cocktail-seduti-al-tavolo-del-bar-amici-allegri.jpg?s=612x612&w=0&k=20&c=R16D8z5sKbp-mocJo0viMxR55xc0uDow3TY1oBxR_XY=" alt="Anatra fritta">
             </div>
             <div class="slide">
-                <img src="https://media.istockphoto.com/id/500466008/it/foto/bistecca-di-manzo.jpg?s=612x612&w=0&k=20&c=5G7RzzfUMuK4ge5pnZ0B8N9qdNP_oTpVR7m7gxlHduQ=" alt="Bistecca di manzo">
+                <img src="https://media.istockphoto.com/id/1172084897/it/foto/donne-alzando-un-bicchiere-di-spritz-a-tavola.jpg?s=612x612&w=0&k=20&c=lE93yGTcOdOJMnGJGgxjGM6wekDUQRAIzZehjqbVeiU=" alt="Bistecca di manzo">
             </div>
         </div>
-        <div class="carousel-overlay-text">Ristorante Da Roberto</div>
+        <div class="carousel-overlay-text">Caffetteria Roma - Albenga</div>
     </section>
 
     <!-- Descrizione -->
@@ -49,22 +65,22 @@
         <section class="descrizione">
             <div class="riga">
                 <div class="testo">
-                    <h2>Benvenuti al Ristorante Da Roberto</h2>
-                    <p>Nel cuore della tradizione gastronomica italiana, il Ristorante Da Roberto offre un’esperienza unica fatta di sapori autentici, ingredienti freschi e passione per la cucina. Ogni piatto racconta una storia, ogni ingrediente è scelto con cura.</p>
+                    <h2>Benvenuti alla Caffetteria Roma</h2>
+                    <p>Nel cuore di Albenga, la storica Caffetteria Roma è il punto di riferimento per colazioni, pause caffè e aperitivi. Da anni accogliamo i nostri clienti con la stessa passione e con prodotti di qualità, selezionati con cura.</p>
                 </div>
             </div>
             <div class="riga inversa">
-                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Sala ristorante elegante">
+                <img src="https://media.istockphoto.com/id/2195521811/it/foto/breakfast-sandwiches-with-smoked-salmon-and-avocado-on-dark-rye-bread-with-microgreens-on-a.jpg?s=612x612&w=0&k=20&c=UAyhdPEwwR2CSmczvPAnxqqrQeWhOMibzGWn21SA8-M=" alt="Interno accogliente Caffetteria Roma">
                 <div class="testo">
-                    <h2>Eleganza e Accoglienza</h2>
-                    <p>Un ambiente raffinato ma familiare, perfetto per cene romantiche, eventi o semplici serate in compagnia. Il nostro staff ti accoglierà con professionalità e un sorriso, per farti sentire sempre a casa.</p>
+                    <h2>Accoglienza e Stile</h2>
+                    <p>Un ambiente caldo e accogliente dove sentirsi a casa: che sia per un espresso veloce o per un aperitivo tra amici, il nostro staff ti farà sempre sentire il benvenuto.</p>
                 </div>
             </div>
             <div class="riga">
-                <img src="https://media.istockphoto.com/id/1446478827/it/foto/uno-chef-sta-cucinando-nella-cucina-del-suo-ristorante.jpg?s=612x612&w=0&k=20&c=2TZGrqU7TAPMOtEVU-lRGRRlA-V663jHgobpI2H4FOI=" alt="Chef al lavoro">
+                <img src="https://media.istockphoto.com/id/1458349885/it/foto/primo-piano-celebrazione-degli-amici-cinesi-asiatici-brindare-pranzo-allaperto.jpg?s=612x612&w=0&k=20&c=lelC-i-WBEEEIJT-ZjPKkMTjM61o4YEtOttyddxpI5M=" alt="Aperitivi e cocktail al bancone">
                 <div class="testo">
-                    <h2>La nostra cucina</h2>
-                    <p>Dalla pasta fresca fatta a mano ai dolci della casa, ogni piatto è preparato al momento, con prodotti stagionali e locali. Offriamo anche un’ampia carta dei vini per accompagnare al meglio ogni portata.</p>
+                    <h2>Caffè, Aperitivi e Cocktail</h2>
+                    <p>Dalla colazione con cappuccini cremosi e brioches fresche, fino agli aperitivi con cocktail classici e sfiziosi stuzzichini: ogni momento della giornata è perfetto per fermarsi alla Caffetteria Roma.</p>
                 </div>
             </div>
         </section>
@@ -73,14 +89,26 @@
     <!-- Mappa -->
     <section class="mappa">
         <h2>Ci trovi qui 📍</h2>
-        <div id="map"></div>
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.7286259255557!2d8.215183911944036!3d44.04766092670823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d25ec9ed2dbe7f%3A0x703038b836466b5a!2sViale%20Martiri%20della%20Libert%C3%A0%2C%2017031%20Albenga%20SV!5e0!3m2!1sit!2sit!4v1752839646147!5m2!1sit!2sit"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Ristorante Da Roberto - Tutti i diritti riservati - Realizzato da Fabio Merello</p>
+        <p>&copy; 2025 Caffetteria Roma - Albenga - Tutti i diritti riservati - Realizzato da Fabio Merello</p>
     </footer>
 
 </div>
+
+<script>
+
+</script>
 </body>
 </html>

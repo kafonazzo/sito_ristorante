@@ -51,14 +51,14 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(nextSlide, slideInterval);
 
     // Mappa Leaflet (da Roberto)
-    const map = L.map('map').setView([44.42850, 8.74959], 18);
+    const map = L.map('map').setView([44.0476609, 8.2151839], 18);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    L.marker([44.42850, 8.74959]).addTo(map)
-        .bindPopup('Ferramenta Luxardo<br>Via Carlo Camozzini 51/R, Voltri, Genova')
+    L.marker([44.0476609, 8.2151839]).addTo(map)
+        .bindPopup('Caffetteria Roma<br>Viale Martiri della Libertà, 17031 Albenga, Italia')
         .openPopup();
 });
 
